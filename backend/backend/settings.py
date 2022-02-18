@@ -28,7 +28,7 @@ SECRET_KEY = SECRET_KEY
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 
 
 # Application definition
@@ -94,7 +94,7 @@ ROOT_URLCONF = "backend.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "frontend/build")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -161,7 +161,7 @@ STATIC_URL = "/static/"
 
 MEDIA_URL = "/images/"
 
-STATICFILES_DIRS = [BASE_DIR / "static"]
+STATICFILES_DIRS = [BASE_DIR / "static", BASE_DIR / "frontend/build/static"]
 
 MEDIA_ROOT = "static/images"
 
@@ -172,3 +172,6 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+if os.getcwd() == "/app":
+    DEBUG = False

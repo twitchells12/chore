@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+
 
 # misc
 .DS_Store
@@ -34,7 +34,7 @@ secret.py
 *.pyc
 __pycache__/
 local_settings.py
-db.sqlite3
+# db.sqlite3
 db.sqlite3-journal
 media
 
@@ -52,7 +52,7 @@ media
 
 # Distribution / packaging
 .Python
-build/
+
 develop-eggs/
 dist/
 downloads/
@@ -106,9 +106,7 @@ instance/
 # Scrapy stuff:
 .scrapy
 
-# Sphinx documentation
-docs/_build/
-doc/_build/
+
 
 # PyBuilder
 target/
