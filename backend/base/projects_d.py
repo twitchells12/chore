@@ -1,0 +1,28 @@
+projects = [
+    {
+        "_id": "1",
+        "project_type": "Sic",
+        "project_name": "Test 1",
+        "created_by": "Admin",
+        "workers": "Admin",
+        "description": "test 1",
+        "created_at": "12-12-2020",
+        "due_date": "4-23-2021",
+        "status": "Active",
+        "completed_on": "",
+        "team": "walkabouts",
+    },
+    {
+        "_id": "2",
+        "project_type": "Sic",
+        "project_name": "Test 2",
+        "created_by": "Admin",
+        "workers": "Admin",
+        "description": "test 2",
+        "created_at": "12-12-2020",
+        "due_date": "4-23-2021",
+        "status": "Active",
+        "completed_on": "",
+        "team": "walkabouts",
+    },
+]
